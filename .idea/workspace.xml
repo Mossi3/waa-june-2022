@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b101aba-6c12-414a-b0f4-810a1da80b85" name="Changes" comment="Update README.md" />
+    <list default="true" id="7b101aba-6c12-414a-b0f4-810a1da80b85" name="Changes" comment="Update README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,6 +100,8 @@
       <workItem from="1655837489074" duration="3253000" />
       <workItem from="1655927182476" duration="77000" />
       <workItem from="1655927296683" duration="21708000" />
+      <workItem from="1655995405876" duration="4000" />
+      <workItem from="1655995431076" duration="106000" />
     </task>
     <task id="LOCAL-00001" summary="Update README.md">
       <created>1655993844154</created>

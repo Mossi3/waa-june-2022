@@ -43,15 +43,15 @@ public class StudentController {
         studentService.delete(id);
     }
 
-    @GetMapping
-    public List<Student> findStudentByMajor(@RequestParam String major){
-        List < Student> students= studentService.getStudentsByMajor(major);
-        return students;
-    }
-
-    @GetMapping ("/{id}/courses")
-    public List<Course> getCoursesByStudentId(@PathVariable Long id){
-        List<Course> courses = studentService.getCoursesByStudentId(id);
-        return courses;
-    }
+//    @GetMapping
+//    public List<Student> findStudentByMajor(@RequestParam String major){
+//        List < Student> students= studentService.getStudentsByMajor(major);
+//        return students;
+//    }
+//
+//    @GetMapping ("/{id}/courses")
+//    public List<Course> getCoursesByStudentId(@PathVariable Long id){
+//        List<Course> courses = studentService.getCoursesByStudentId(id);
+//        return courses;
+//    }
 }

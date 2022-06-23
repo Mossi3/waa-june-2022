@@ -78,6 +78,7 @@ public class StudentRepo {
              student1.setEmail(student.getEmail());
              student1.setMajor(student.getMajor());
              student1.setGpa(student.getGpa());
+             student1.setCoursesTaken(student.getCoursesTaken());
 
              students.add(student1);
              return student1;
@@ -89,8 +90,17 @@ public class StudentRepo {
          }
 
 
+         public List<Student> getStudentsByMajor(String major){
+             List<Student> student =students.stream()
+                     .filter(s -> s.getMajor().equals(major))
+                     .collect(Collectors.toList());
 
+             return student;
+         }
 
-
+    public List<Course> getCoursesByStudentId(Long studentId){
+        Student student= findStudentById(studentId);
+        return student.getCoursesTaken();
+    }
 
 }

@@ -43,16 +43,15 @@ public class StudentServiceImpl implements StudentService {
     public void delete(Long id){
         studentRepo.delete(id);
     }
+
     @Override
     public List<Student> getStudentsByMajor(String major){
-        return  studentRepo.findAllStudents().stream()
-                .filter(s -> s.getMajor().equals(major))
-                .collect(Collectors.toList());
+        return studentRepo.getStudentsByMajor(major);
     }
 
     @Override
     public List<Course> getCoursesByStudentId(Long studentId){
-        return studentRepo.findStudentById(studentId).getCoursesTaken();
+        return studentRepo.getCoursesByStudentId(studentId);
 
     }
 }
